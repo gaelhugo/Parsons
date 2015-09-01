@@ -41,7 +41,6 @@ function draw(){
 	//square.drawCenterSquare();
 	
 	d = new Date();
-	//console.log(d.getMilliseconds());
 	ctx.font="30px Arial";
 	string = ((d.getHours()<10)?0:'')+d.getHours()+':'+((d.getMinutes()<10)?0:'')+d.getMinutes()+':'+((d.getSeconds()<10)?0:'')+d.getSeconds()+':'+((d.getMilliseconds()<100)?0:'')+d.getMilliseconds();
 	ctx.fillText(string,0,24);
@@ -49,7 +48,7 @@ function draw(){
 	allLetters = string.split("");
 	posx = width/2 - (12*5*(spacer+letterSpacer))/2;
 	for(var i=0;i<allLetters.length;i++){
-		//console.log(allLetters[i]);
+		
 		//get binary letter composition
 		binary = numbers.getBinary(allLetters[i]);
 		
@@ -58,7 +57,6 @@ function draw(){
 			//colnumber
 			for(var k=0;k<binary[j].length;k++){
 				//draw stuff
-				//console.log("draw");
 				if(binary[j][k] == 1){
 					var shape = new Shape(posx + k*spacer,posy + j*spacerY,5,ctx);
 					shape.drawCircle();
