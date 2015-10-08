@@ -774,6 +774,7 @@
 					"\"$(SRCROOT)/Source/lib\"",
 				);
 				OTHER_CFLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Ejecta;
 				PRODUCT_NAME = Ejecta;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -799,6 +800,7 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Source/lib\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Ejecta;
 				PRODUCT_NAME = Ejecta;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

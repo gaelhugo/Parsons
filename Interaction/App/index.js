@@ -1,2 +1,2 @@
-ejecta.include("spider/Spider.js");
-ejecta.include("spider/index.js");
+ejecta.include("Example/Spider.js");
+ejecta.include("Example/index.js");
